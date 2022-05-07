@@ -20,4 +20,11 @@
 - SELECT rental_date, customer_id, rental_date FROM rental WHERE rental_date = '2005-05-25'; to Query rental date, customer id and rental id in rental table when rental date is 2005-05-25.
 - SELECT * FROM customer WHERE store_id ='2' OR customer_id = '7'; to Query all columns for customers in customer table with store id 2 or customer id 7.
 - SELECT * FROM customer WHERE payment > 200; to Query all columns for customers in customer table who have spent amount more than $200.
-- 
+- SELECT amount, payment_date FROM payment WHERE amount < 2; to Query amount and payment_date from payment where the amount paid was less than $2.
+- SELECT first_name FROM actor WHERE first_name = 'Chris' OR first_name = 'Cameron' OR first_name = 'Cuba'; to get a list of actors with the first name Chris, Cameron, or Cuba.
+- SELECT last_name FROM customer WHERE first_name = 'John'; to get last name of customers in customer table whose first names are "John".
+- SELECT staff_id, first_name, username FROM staff WHERE store_id < 6; to get staff id, first name and username of staff in staff table whose store id is less than 6.
+- SELECT release_year, rental_duration, rental_rate FROM film; to get release year, rental duration and rental rate of films in film table.
+- SELECT city_id, country_id FROM city WHERE city = 'New York'; to query to get city id and country id of country in city table whose name is "New York".
+- SELECT * FROM city; to get all data from City table.
+- SELECT film_id FROM film_category WHERE category_id = '2'; to get film id of film in film_category table with category_id 2.
