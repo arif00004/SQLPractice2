@@ -1,0 +1,23 @@
+- SELECT * FROM actor; used to get all data from the table actor
+- SELECT email, last_name FROM customer; used to get email and last name of customer
+- SELECT title, description, release_year FROM film; used to run query to get title, description and release year of film.
+- SELECT city, country_id FROM city; used to find city and country id from city table.
+- SELECT amount, payment_date, customer_id FROM payment; used to retrive required info.
+- SELECT * FROM language; used to get all data from language.
+- SELECT payment FROM payment WHERE customer_id = '10'; to query payment from payment table for customer id 10.
+- SELECT last_name, first_name FROM customer WHERE first_name = 'Mary'; used to get last and first name in customer table where customer's first name is Mary.
+- SELECT last_name, first_name FROM customer WHERE first_name = 'Mary' AND last_name = 'Smith'; to Query last name and first name of customers in customer table whose first names are "Mary" and last names are "Smith"
+- SELECT last_name, first_name FROM customer WHERE first_name = 'Susan' AND last_name= 'Jones'; to Query last name and first name of customers in customer table whose first names are "Susan" or last names are "Jones".
+- SELECT email FROM customer WHERE first_name = 'Mar' OR first_name = 'Mary' OR first_name = 'Mari'; to Query email of customers in customer table whose first name is "Mar", "Mary" or "Mari".
+- SELECT last_name, first_name FROM customer WHERE first_name LIKE '%Ma%'; to Query last name and first name of customers in customer table whose first names start with "Ma".
+- SELECT staff_id, first_name, username FROM staff WHERE staff_id = '10'; to get staff id, first name and username of staff in staff table whose staff id is 10.
+- SELECT last_name, first_name FROM customer WHERE first_name LIKE '%M%' AND LENGTH(first_name) BETWEEN 3 AND 5; to Query last name and first name of customers in customer table whose first name start with letter "M" and contains 3 to 5 characters.
+- SELECT last_name, first_name FROM customer WHERE first_name LIKE '%Bra%' AND last_name <> 'Motley'; Query last name and first name of customers in customer table whose first names start with "Bra" and last names are not "Motley"
+- SELECT store_id FROM customer WHERE customer_number > 300; to Query store id of stores that have more than 300 customers in customer table.
+- SELECT last_name, first_name FROM customer WHERE payment > 200; to query to select all details of the only customers who have been spending more than 200 in customer table.
+- SELECT * FROM film WHERE film_id < 4; to Query all columns in film table where the film_id is less than 4.
+- SELECT * FROM address; to query to get all data from address table.
+- SELECT rental_date, customer_id, rental_date FROM rental WHERE rental_date = '2005-05-25'; to Query rental date, customer id and rental id in rental table when rental date is 2005-05-25.
+- SELECT * FROM customer WHERE store_id ='2' OR customer_id = '7'; to Query all columns for customers in customer table with store id 2 or customer id 7.
+- SELECT * FROM customer WHERE payment > 200; to Query all columns for customers in customer table who have spent amount more than $200.
+- 
